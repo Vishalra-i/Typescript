@@ -7,16 +7,18 @@ function greet(firstName:string){
 
 console.log(greet("Vishal Rai"))
 
-function isLegal(age:number){
+function legalAgeCheck(age:number){
     return age >= 18 ? true : false;
 }
 
-console.log(isLegal(20)) //True
-console.log(isLegal(16)) //false
+console.log(legalAgeCheck(20)) //True
+console.log(legalAgeCheck(16)) //false
 
 function runAfter21S(fn : ()=> void) {
     setTimeout(fn ,1000)
 }
 
 runAfter21S(() => console.log("Hello"))//Hello
+
+
 
